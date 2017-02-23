@@ -27,6 +27,7 @@ function init (env) {
       buildUrl: env.BUILD_URL,
       // project info
       jobName: env.JOB_NAME || projectName,
+      jobUrl: env.JOB_URL,
       // misc
       gitCommit: env.GIT_COMMIT,
       gitBranch: env.GIT_BRANCH,
@@ -49,6 +50,7 @@ Build number: ${info.buildNumber}
 Build tag: ${info.buildTag}
 Build URL: ${info.buildUrl}
 Job name: ${info.jobName}
+Job URL: ${info.jobUrl}
 Git commit: ${info.gitCommit}
 Git branch: ${info.gitBranch}
 Jenkins URL: ${info.jenkinsUrl}

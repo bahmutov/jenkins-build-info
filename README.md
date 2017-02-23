@@ -18,6 +18,17 @@ npm install --save jenkins-build-info
 
 ## Use
 
+While running on Jenkins:
+
+```js
+const grabJenkinsInfo = require('jenkins-build-info')
+const {isOnJenkins, collectionInformation} = grabJenkinsInfo()
+if (isOnJenkins) {
+  const info = collectionInformation()
+  // info {specName, buildUrl, ...}
+}
+```
+
 ### Small print
 
 Author: Gleb Bahmutov &lt;gleb.bahmutov@gmail.com&gt; &copy; 2017
